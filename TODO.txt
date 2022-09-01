@@ -1,0 +1,2 @@
+-
+X Add ansible to zsh path: export PATH="/Users/geordan/Library/Python/3.8/bin:$PATH"
