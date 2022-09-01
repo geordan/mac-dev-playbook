@@ -1,0 +1,138 @@
+---
+downloads: ~/.ansible-downloads/
+
+configure_dotfiles: yes
+configure_hostname: yes
+configure_nvm: no
+configure_osx: no
+configure_sudoers: yes
+configure_terminal: no
+configure_tmux: yes
+configure_neovim: yes
+configure_zsh: yes
+
+computer_name: geordan-mbp
+hostname: geordan-mbp.ht.home
+local_hostname: geordan-mbp.local
+
+dotfiles_repo: git@github.com:geordan/dotfiles.git
+dotfiles_repo_version: msharma24
+dotfiles_repo_accept_hostkey: yes
+dotfiles_repo_local_destination: ~/code/dotfiles
+dotfiles_files:
+- .config
+- .gitconfig
+- .oh-my-zsh
+- .p10k.zsh
+- .tmux.conf
+- .tmux.mac.conf
+- .vimrc
+- .zshrc
+
+homebrew_upgrade_all_packages: yes
+homebrew_installed_packages: 
+- asdf
+- exa
+- go
+- gopls
+- mtr
+- neovim
+- node
+- qmk
+- reattach-to-user-namespace
+- ripgrep
+- svn
+- terraform-ls
+- tflint
+- tfenv
+- tmux
+- tree
+- vim
+- wget
+- yamllint
+- youtube-dl
+- zsh
+
+homebrew_uninstalled_packages:
+- terraform
+
+homebrew_taps:
+- hashicorp/tap
+- homebrew/cask
+- homebrew/cask-drivers
+- homebrew/cask-fonts
+- homebrew/core
+- homebrew/core
+- qmk/qmk
+- romkatv/powerlevel10k
+- weaveworks/tap
+
+homebrew_cask_appdir: /Applications
+
+homebrew_cask_apps:
+- 1password
+- 1password-cli
+- docker
+- firefox
+- font-meslo-for-powerline
+- font-meslo-lg
+- font-meslo-lg-nerd-font
+- google-chrome
+- kindle
+- kitty
+- launchbar
+- logitech-options
+- mochi
+- numi
+- omnifocus
+- signal
+- slack
+- spotify
+- timeular
+- zsa-wally
+
+#homebrew_cask_uninstalled_apps:
+#- alacritty
+#- calibre
+#- svn 
+#- font-fira-code
+#- font-fira-code-nerd-font
+#- font-fira-mono
+#- font-fira-mono-for-powerline
+#- font-fira-mono-nerd-font
+#- font-jetbrains-mono
+#- iterm2
+#- vagrant
+#- virtualbox
+#- virtualbox-extension-pack
+
+
+# See `geerlingguy.mas` role documentation for usage instructions.
+mas_installed_apps: []
+mas_email: ""
+mas_password: ""
+
+osx_script: "~/.osx --no-restart"
+
+# Install packages from other package managers.
+# Note: You are responsible for making sure the required package managers are
+# installed, eg. through homebrew.
+composer_packages: []
+# - name: drush
+#   state: present # present/absent, default: present
+#   version: "^8.1" # default: N/A
+gem_packages: []
+# - name: bundler
+#   state: present # present/absent/latest, default: present
+#   version: "~> 1.15.1" # default: N/A
+npm_packages: []
+# - name: webpack
+#   state: present # present/absent/latest, default: present
+#   version: "^2.6" # default: N/A
+pip_packages:
+- name: virtualenvwrapper
+state: latest
+# version: N/A
+
+# Glob pattern to ansible task files to run after all other tasks are finished.
+post_provision_tasks: []
