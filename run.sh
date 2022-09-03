@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 set -eux
 
+EXTRA_VARS="$1"
 source venv/bin/activate
-ansible-playbook main.yml --ask-become-pass
+ansible-playbook main.yml --ask-become-pass --extra-vars "$EXTRA_VARS"
 deactivate
 
 exit 0
