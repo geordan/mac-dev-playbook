@@ -15,8 +15,8 @@ configure_sublime: no
 sudoers_custom_config: ''
 
 computer_name: geordan-mbp
-hostname: geordan-mbp.ht.home
-local_hostname: geordan-mbp.local
+hostname: geordan-mbp.lan
+local_hostname: geordan-mbp.lan
 
 dotfiles_repo: git@github.com:geordan/dotfiles.git
 dotfiles_repo_version: main
@@ -30,6 +30,7 @@ dotfiles_files:
 
 homebrew_upgrade_all_packages: yes
 homebrew_installed_packages: 
+- awscli
 - asdf
 - exa
 - flake8
@@ -111,7 +112,8 @@ homebrew_cask_uninstalled_apps:
 
 
 # See `geerlingguy.mas` role documentation for usage instructions.
-mas_installed_apps: []
+mas_installed_apps:
+  - 1480933944
 mas_email: ""
 mas_password: ""
 
