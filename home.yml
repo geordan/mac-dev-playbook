@@ -30,8 +30,8 @@ dotfiles_files:
 
 homebrew_upgrade_all_packages: yes
 homebrew_installed_packages: 
-- awscli
 - asdf
+- awscli
 - exa
 - flake8
 - fzf
@@ -78,7 +78,6 @@ homebrew_cask_apps:
 - 1password-cli
 - docker
 - firefox
-- qmk-toolbox
 - font-meslo-for-powerline
 - font-meslo-lg
 - font-meslo-lg-nerd-font
@@ -88,10 +87,13 @@ homebrew_cask_apps:
 - launchbar
 - mochi
 - numi
+- qmk-toolbox
+- raspberry-pi-imager
 - signal
 - slack
 - spotify
 - timeular
+- zoom
 - zsa-wally
 
 homebrew_cask_uninstalled_apps:
