@@ -84,7 +84,6 @@ homebrew_cask_apps:
 - rectangle
 - slack
 - spotify
-- zoom
 
 homebrew_cask_uninstalled_apps:
 - 1password
