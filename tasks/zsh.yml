@@ -1,0 +1,12 @@
+---
+
+- name: zsh-vi-mode - check for existing plugin
+  ansible.builtin.stat:
+    path: ~/.oh-my-zsh/custom/plugins/zsh-vi-mode
+  register: zsh_vi_mode_dir
+
+- name: zsh-vi-mode - fetch plugin
+  ansible.builtin.git:
+    repo: 'https://github.com/jeffreytse/zsh-vi-mode.git'
+    dest: ~/.oh-my-zsh/custom/plugins/zsh-vi-mode
+  when: zsh_vi_mode_dir.isdir is not defined
