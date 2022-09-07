@@ -89,6 +89,7 @@ homebrew_cask_apps:
 - numi
 - qmk-toolbox
 - raspberry-pi-imager
+- rectangle
 - signal
 - slack
 - spotify
