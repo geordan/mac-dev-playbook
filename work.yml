@@ -50,6 +50,7 @@ homebrew_installed_packages:
 - tflint
 - tmux
 - tree
+- vagrant-completion
 - vim
 - wget
 - yamllint
@@ -86,6 +87,9 @@ homebrew_cask_apps:
 - rectangle
 - slack
 - spotify
+- vagrant
+- virtualbox
+- virtualbox-extension-pack
 
 homebrew_cask_uninstalled_apps:
 - 1password
@@ -104,9 +108,6 @@ homebrew_cask_uninstalled_apps:
 - signal
 - svn 
 - timeular
-- vagrant
-- virtualbox
-- virtualbox-extension-pack
 - zsa-wally
 
 
