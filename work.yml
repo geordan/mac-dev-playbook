@@ -82,6 +82,7 @@ homebrew_cask_apps:
 - kindle
 - kitty
 - launchbar
+- logitech-options
 - mochi
 - numi
 - rectangle
@@ -103,7 +104,6 @@ homebrew_cask_uninstalled_apps:
 - font-fira-mono-nerd-font
 - font-jetbrains-mono
 - iterm2
-- logitech-options
 - qmk-toolbox
 - signal
 - svn 

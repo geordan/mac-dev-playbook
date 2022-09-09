@@ -85,6 +85,7 @@ homebrew_cask_apps:
 - kindle
 - kitty
 - launchbar
+- logitech-options
 - mochi
 - numi
 - qmk-toolbox
@@ -98,7 +99,6 @@ homebrew_cask_apps:
 - zsa-wally
 
 homebrew_cask_uninstalled_apps:
-- logitech-options
 - alacritty
 - calibre
 - svn 
