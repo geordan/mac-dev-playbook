@@ -10,3 +10,14 @@
     repo: 'https://github.com/jeffreytse/zsh-vi-mode.git'
     dest: ~/.oh-my-zsh/custom/plugins/zsh-vi-mode
   when: zsh_vi_mode_dir.isdir is not defined
+
+- name: zsh-fzf-history-search - check for existing plugin
+  ansible.builtin.stat:
+    path: "{{ zsh_fzf_history_search_dir }}"
+  register: zsh_fzf_history_search_dir
+
+- name: zsh-fzf-history-search - fetch plugin
+  ansible.builtin.git:
+    repo: 'https://github.com/joshskidmore/zsh-fzf-history-search'
+    dest: "{{ zsh_fzf_history_search_dir }}"
+    update: yes
