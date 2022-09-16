@@ -27,6 +27,7 @@ dotfiles_repo_local_destination: ~/code/dotfiles
 dotfiles_files:
 - .config
 - .oh-my-zsh
+- .p10k.zsh
 - .tmux.conf
 - .zshrc
 
