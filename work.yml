@@ -26,6 +26,7 @@ dotfiles_repo_accept_hostkey: yes
 dotfiles_repo_local_destination: ~/code/dotfiles
 dotfiles_files:
 - .config
+- .oh-my-zsh
 - .tmux.conf
 - .zshrc
 
