@@ -43,6 +43,7 @@ homebrew_installed_packages:
 - go
 - gopls
 - gopls
+- lua-language-server
 - mtr
 - neovim
 - node
