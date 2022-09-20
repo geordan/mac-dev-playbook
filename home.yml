@@ -21,7 +21,7 @@ hostname: geordan-mbp.lan
 local_hostname: geordan-mbp.lan
 
 dotfiles_repo: git@github.com:geordan/dotfiles.git
-dotfiles_repo_version: main
+dotfiles_repo_version: neovim-rewrite
 dotfiles_repo_accept_hostkey: yes
 dotfiles_repo_local_destination: ~/code/dotfiles
 dotfiles_files:
@@ -36,6 +36,7 @@ homebrew_upgrade_all_packages: yes
 homebrew_installed_packages: 
 - asdf
 - awscli
+- bash-language-server
 - exa
 - flake8
 - fzf
@@ -57,6 +58,7 @@ homebrew_installed_packages:
 - tree
 - vim
 - wget
+- yaml-language-server
 - yamllint
 - youtube-dl
 - zsh
@@ -138,14 +140,20 @@ gem_packages: []
 # - name: bundler
 #   state: present # present/absent/latest, default: present
 #   version: "~> 1.15.1" # default: N/A
-npm_packages: []
-# - name: webpack
-#   state: present # present/absent/latest, default: present
-#   version: "^2.6" # default: N/A
+npm_packages:
+- name: neovim
+  state: latest
+- name: typescript
+  state: latest
+- name: typescript-language-server
+  state: latest
+
 pip_packages:
 - name: virtualenvwrapper
   state: latest
 - name: jsontool
+  state: latest
+- name: neovim
   state: latest
 # version: N/A
 
