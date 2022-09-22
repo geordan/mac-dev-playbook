@@ -52,6 +52,7 @@ homebrew_installed_packages:
 - ripgrep
 - shellcheck
 - svn
+- task
 - terraform-ls
 - tfenv
 - tflint
