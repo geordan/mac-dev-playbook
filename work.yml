@@ -83,8 +83,6 @@ homebrew_taps:
 homebrew_cask_appdir: /Applications
 
 homebrew_cask_apps:
-- 1password
-- 1password-cli
 - docker
 - firefox
 - font-meslo-for-powerline
@@ -98,7 +96,6 @@ homebrew_cask_apps:
 - logitech-options
 - mochi
 - numi
-- omnifocus
 - rectangle
 - slack
 - spotify
@@ -107,6 +104,8 @@ homebrew_cask_apps:
 - virtualbox-extension-pack
 
 homebrew_cask_uninstalled_apps:
+- 1password
+- 1password-cli
 - 1password-cli
 - alacritty
 - calibre
@@ -117,6 +116,7 @@ homebrew_cask_uninstalled_apps:
 - font-fira-mono-nerd-font
 - font-jetbrains-mono
 - iterm2
+- omnifocus
 - qmk-toolbox
 - signal
 - svn 
