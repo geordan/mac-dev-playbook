@@ -21,12 +21,14 @@ zsh_fzf_history_search_dir: '~/.oh-my-zsh/custom/plugins/zsh-fzf-history-search/
 # local_hostname: geordan-mbp.local
 
 dotfiles_repo: git@github.com:geordan/dotfiles.git
-dotfiles_repo_version: neovim-rewrite
+dotfiles_repo_version: main
 dotfiles_repo_accept_hostkey: yes
 dotfiles_repo_local_destination: ~/code/dotfiles
 dotfiles_files:
 - .alias
+- bin
 - .config
+- .functions
 - .oh-my-zsh
 - .p10k.zsh
 - .tmux.conf
@@ -151,6 +153,10 @@ pip_packages:
 - name: virtualenvwrapper
   state: latest
 - name: jsontool
+  state: latest
+- name: neovim
+  state: latest
+- name: tasklib
   state: latest
 # version: N/A
 
