@@ -53,6 +53,7 @@ homebrew_installed_packages:
 - ripgrep
 - shellcheck
 - svn
+- task
 - terraform-ls
 - tfenv
 - tflint
@@ -93,6 +94,7 @@ homebrew_cask_apps:
 - kindle
 - kitty
 - launchbar
+- logitech-camera-settings
 - logitech-options
 - mochi
 - numi
