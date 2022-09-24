@@ -25,6 +25,7 @@ dotfiles_repo_version: neovim-rewrite
 dotfiles_repo_accept_hostkey: yes
 dotfiles_repo_local_destination: ~/code/dotfiles
 dotfiles_files:
+- .alias
 - .config
 - .gitconfig
 - .oh-my-zsh
