@@ -23,12 +23,13 @@ zsh_fzf_history_search_dir: '~/.oh-my-zsh/custom/plugins/zsh-fzf-history-search/
 dotfiles_repo: git@github.com:geordan/dotfiles.git
 dotfiles_repo_version: main
 dotfiles_repo_accept_hostkey: yes
-dotfiles_repo_local_destination: ~/code/dotfiles
+dotfiles_repo_local_destination: ~/repos/geordan/dotfiles
 dotfiles_files:
 - .alias
 - bin
 - .config
 - .functions
+- .gitconfig
 - .oh-my-zsh
 - .p10k.zsh
 - .tmux.conf
@@ -39,6 +40,7 @@ homebrew_installed_packages:
 - asdf
 - awscli
 - bat
+- bottom
 - docker
 - exa
 - flake8
@@ -101,6 +103,7 @@ homebrew_cask_apps:
 - rectangle
 - slack
 - spotify
+- timeular
 - vagrant
 - virtualbox
 - virtualbox-extension-pack
@@ -122,7 +125,6 @@ homebrew_cask_uninstalled_apps:
 - qmk-toolbox
 - signal
 - svn 
-- timeular
 - zsa-wally
 
 
