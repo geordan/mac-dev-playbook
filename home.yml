@@ -87,6 +87,7 @@ homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
 - 1password
 - 1password-cli
+- dash
 - docker
 - firefox
 - font-meslo-for-powerline
@@ -96,8 +97,8 @@ homebrew_cask_apps:
 - kindle
 - kitty
 - launchbar
-- logitech-camera-settings
 - logi-options-plus
+- logitech-camera-settings
 - mochi
 - numi
 - omnifocus
