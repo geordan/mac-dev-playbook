@@ -40,6 +40,7 @@ homebrew_installed_packages:
 - asdf
 - awscli
 - bash-language-server
+- bottom
 - exa
 - flake8
 - fzf
