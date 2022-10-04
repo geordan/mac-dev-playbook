@@ -40,6 +40,7 @@ homebrew_installed_packages:
 - asdf
 - awscli
 - bat
+- black
 - bottom
 - docker
 - exa
@@ -53,10 +54,12 @@ homebrew_installed_packages:
 - neovim
 - node
 - nvm
+- prettier
 - pyright
 - reattach-to-user-namespace
 - ripgrep
 - shellcheck
+- stylua
 - svn
 - task
 - terraform-ls

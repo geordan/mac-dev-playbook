@@ -40,6 +40,7 @@ homebrew_installed_packages:
 - asdf
 - awscli
 - bash-language-server
+- black
 - bottom
 - exa
 - flake8
@@ -51,10 +52,12 @@ homebrew_installed_packages:
 - mtr
 - neovim
 - node
+- prettier
 - pyright
 - reattach-to-user-namespace
 - ripgrep
 - shellcheck
+- stylua
 - svn
 - task
 - terraform-ls
