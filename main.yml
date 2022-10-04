@@ -40,6 +40,10 @@
     - import_tasks: tasks/extra-packages.yml
       tags: ['extra-packages']
 
+    - import_tasks: tasks/repos.yml
+      when: configure_repos
+      tags: ['repos']
+
     - import_tasks: tasks/sublime-text.yml
       when: configure_sublime
       tags: ['sublime-text']
