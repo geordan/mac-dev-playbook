@@ -1,6 +1,7 @@
+*.retry
 *.vagrant
 .DS_Store
-*.retry
-roles*
 config.yml
+repos.yml
+roles*
 venv/**

@@ -50,6 +50,7 @@ homebrew_installed_packages:
 - go
 - gopls
 - htop
+- jq
 - lua-language-server
 - mtr
 - neovim
@@ -93,6 +94,8 @@ homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
 - docker
 - firefox
+- font-jetbrains-mono
+- font-jetbrains-mono-nerd-font
 - font-meslo-for-powerline
 - font-meslo-lg
 - font-meslo-lg-nerd-font
@@ -123,7 +126,6 @@ homebrew_cask_uninstalled_apps:
 - font-fira-mono
 - font-fira-mono-for-powerline
 - font-fira-mono-nerd-font
-- font-jetbrains-mono
 - iterm2
 - omnifocus
 - qmk-toolbox
@@ -168,3 +170,22 @@ pip_packages:
 
 # Glob pattern to ansible task files to run after all other tasks are finished.
 post_provision_tasks: []
+
+repos:
+  # - "geordan/mac-dev-playbook"
+  - "McK-Internal/matter-compliance-matter-iac"
+  - "McK-Internal/matter-compliance-matter-workflow"
+  - "McK-Internal/matter-compliance-pipeline-services"
+  - "McK-Internal/matter-compliance-regression-framework"
+  - "McK-Internal/matter-compliance-snitch-cli"
+  - "McK-Internal/matter-compliance-snitch-core"
+  - "McK-Internal/matter-compliance-snitch-rules"
+  - "McK-Internal/matter-compliance-snitch-types"
+  - "McK-Internal/matter-compliance-snitch-utils"
+    # - "McK-Internal/mta-shared"
+  - "McK-Private/matter-compliance-bc-demo-aws"
+  - "brikis98/terraform-up-and-running-code"
+  - "geordan/dotfiles"
+  - "geordan/wiki"
+  - "reactorworks/snitch-docs-website"
+  - "reactorworks/snitch2"

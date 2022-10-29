@@ -1,0 +1,14 @@
+---
+- name: create repos destination directory
+  ansible.builtin.file:
+    path: "~/repos"
+    state: directory
+
+- name: clone repos
+  ansible.builtin.git:
+    repo: "org-62409820@github.com:{{ item }}.git"
+    dest: "~/repos/{{ item | lower }}/"
+    force: no
+    update: yes
+  loop:
+    "{{ repos }}"

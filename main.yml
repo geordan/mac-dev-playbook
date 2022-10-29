@@ -40,7 +40,7 @@
     - import_tasks: tasks/extra-packages.yml
       tags: ['extra-packages']
 
-    - import_tasks: tasks/repos.yml
+    - import_tasks: tasks/clone_repos.yml
       when: configure_repos
       tags: ['repos']
 
