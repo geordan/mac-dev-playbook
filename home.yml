@@ -7,11 +7,12 @@ configure_hostname: yes
 configure_neovim: yes
 configure_nvm: no
 configure_osx: no
+configure_repos: yes
+configure_sublime: no
 configure_sudoers: yes
 configure_terminal: no
 configure_tmux: yes
 configure_zsh: yes
-configure_sublime: no
 
 sudoers_custom_config: ''
 zsh_fzf_history_search_dir: '~/.oh-my-zsh/custom/plugins/zsh-fzf-history-search/'
