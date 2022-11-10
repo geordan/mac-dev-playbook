@@ -39,6 +39,7 @@ dotfiles_files:
 homebrew_upgrade_all_packages: yes
 homebrew_installed_packages: 
 - asdf
+- aws-iam-authenticator
 - awscli
 - bat
 - black
@@ -50,6 +51,7 @@ homebrew_installed_packages:
 - fzf
 - go
 - gopls
+- helm
 - htop
 - jq
 - kops
@@ -64,6 +66,7 @@ homebrew_installed_packages:
 - reattach-to-user-namespace
 - ripgrep
 - shellcheck
+- sonobuoy
 - stylua
 - svn
 - task
