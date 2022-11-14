@@ -7,11 +7,12 @@ configure_hostname: yes
 configure_neovim: yes
 configure_nvm: no
 configure_osx: no
+configure_repos: no
+configure_sublime: no
 configure_sudoers: yes
 configure_terminal: no
 configure_tmux: yes
 configure_zsh: yes
-configure_sublime: no
 
 sudoers_custom_config: ''
 zsh_fzf_history_search_dir: '~/.oh-my-zsh/custom/plugins/zsh-fzf-history-search/'
@@ -61,10 +62,12 @@ homebrew_installed_packages:
 - svn
 - task
 - terraform-ls
+- terraform-lsp
 - tfenv
 - tflint
 - tmux
 - tree
+- vagrant-completion
 - vim
 - wget
 - yaml-language-server
@@ -91,7 +94,6 @@ homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
 - 1password
 - 1password-cli
-- dash
 - docker
 - firefox
 - font-meslo-for-powerline
@@ -106,6 +108,7 @@ homebrew_cask_apps:
 - mochi
 - numi
 - omnifocus
+- parallels
 - qmk-toolbox
 - raspberry-pi-imager
 - rectangle
@@ -113,12 +116,14 @@ homebrew_cask_apps:
 - slack
 - spotify
 - timeular
+- vagrant
 - zoom
 - zsa-wally
 
 homebrew_cask_uninstalled_apps:
 - alacritty
 - calibre
+- dash
 - font-fira-code
 - font-fira-code-nerd-font
 - font-fira-mono
@@ -128,7 +133,6 @@ homebrew_cask_uninstalled_apps:
 - iterm2
 - logitech-options
 - svn 
-- vagrant
 - virtualbox
 - virtualbox-extension-pack
 
