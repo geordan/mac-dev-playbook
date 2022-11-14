@@ -39,18 +39,23 @@ dotfiles_files:
 homebrew_upgrade_all_packages: yes
 homebrew_installed_packages: 
 - asdf
+- aws-iam-authenticator
 - awscli
 - bat
 - black
 - bottom
 - docker
+- eksctl
 - exa
 - flake8
 - fzf
 - go
 - gopls
+- helm
 - htop
 - jq
+- kops
+- kubectl
 - lua-language-server
 - mtr
 - neovim
@@ -61,6 +66,7 @@ homebrew_installed_packages:
 - reattach-to-user-namespace
 - ripgrep
 - shellcheck
+- sonobuoy
 - stylua
 - svn
 - task
@@ -92,6 +98,8 @@ homebrew_taps:
 homebrew_cask_appdir: /Applications
 
 homebrew_cask_apps:
+- 1password
+- 1password-cli
 - docker
 - firefox
 - font-jetbrains-mono
@@ -107,6 +115,7 @@ homebrew_cask_apps:
 - logitech-options
 - mochi
 - numi
+- omnifocus
 - rectangle
 - slack
 - spotify
@@ -116,9 +125,6 @@ homebrew_cask_apps:
 - virtualbox-extension-pack
 
 homebrew_cask_uninstalled_apps:
-- 1password
-- 1password-cli
-- 1password-cli
 - alacritty
 - calibre
 - font-fira-code
@@ -127,7 +133,6 @@ homebrew_cask_uninstalled_apps:
 - font-fira-mono-for-powerline
 - font-fira-mono-nerd-font
 - iterm2
-- omnifocus
 - qmk-toolbox
 - signal
 - svn 

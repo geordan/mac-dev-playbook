@@ -49,6 +49,8 @@ homebrew_installed_packages:
 - go
 - gopls
 - gopls
+- kops
+- kubectl
 - lua-language-server
 - mtr
 - neovim
