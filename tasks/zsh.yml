@@ -1,7 +1,4 @@
 ---
-# vars:
-#   - powerlevel10k_dir: '~/.oh-my-zsh/custom/themes/powerlevel10k'
-
 - name: powerlevel10k - check for existing plugin
   ansible.builtin.stat:
     path: ~/.oh-my-zsh/custom/themes/powerlevel10k/
@@ -33,11 +30,11 @@
 
 - name: zsh-fzf-history-search - check for existing plugin
   ansible.builtin.stat:
-    path: "{{ zsh_fzf_history_search_dir }}"
+    path: "~/.oh-my-zsh/custom/plugins/zsh-fzf-history-search"
   register: zsh_fzf_history_search_dir
 
 - name: zsh-fzf-history-search - fetch plugin
   ansible.builtin.git:
     repo: 'https://github.com/joshskidmore/zsh-fzf-history-search'
-    dest: "{{ zsh_fzf_history_search_dir }}"
+    dest: "~/.oh-my-zsh/custom/plugins/zsh-fzf-history-search"
     update: yes

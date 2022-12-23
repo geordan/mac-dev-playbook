@@ -1,7 +1,8 @@
 ---
 - hosts: all
 
-  vars_files: [] 
+  vars_files:
+    - default.config.yml
 
   pre_tasks:
     - name: Include playbook configuration.
@@ -28,6 +29,9 @@
     - import_tasks: tasks/sudoers.yml
       when: configure_sudoers
       tags: ['sudoers']
+    - import_tasks: tasks/zsh.yml
+      when: configure_zsh
+      tags: ['zsh']
 
     - import_tasks: tasks/terminal.yml
       when: configure_terminal
@@ -40,18 +44,9 @@
     - import_tasks: tasks/extra-packages.yml
       tags: ['extra-packages']
 
-    - import_tasks: tasks/clone_repos.yml
-      when: configure_repos
-      tags: ['repos']
-
     - import_tasks: tasks/sublime-text.yml
       when: configure_sublime
       tags: ['sublime-text']
-
-    - import_tasks: tasks/zsh.yml
-      when: configure_zsh
-      tags: ['zsh']
-
 
     - block:
         - name: Run configured post-provision ansible task files.
