@@ -104,31 +104,21 @@ homebrew_cask_apps:
   - 1password
   - 1password-cli
   - docker
-  - dropbox
-  - firefox
   - font-meslo-for-powerline
   - font-meslo-lg
   - font-meslo-lg-nerd-font
   - google-chrome
-  - kindle
   - kitty
   - launchbar
-  - licecap
   - logi-options-plus
   - mochi
   - numi
   - omnifocus
-  - parallels
-  - qmk-toolbox
-  - raspberry-pi-imager
   - rectangle
-  - signal
   - slack
   - spotify
   - sublime-text
   - vagrant
-  - zoom
-  - zsa-wally
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []

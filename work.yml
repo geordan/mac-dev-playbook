@@ -1,147 +1,133 @@
 ---
 downloads: ~/.ansible-downloads/
 
-configure_dock: yes
-configure_dotfiles: yes
-configure_hostname: no
-configure_neovim: yes
-configure_nvm: no
-configure_osx: no
-configure_repos: yes
-configure_sudoers: no
-configure_terminal: no
-configure_tmux: yes
-configure_zsh: yes
-configure_sublime: no
+configure_dotfiles: true
+configure_terminal: true
+configure_osx: false
+configure_zsh: true
+
+# Set to 'true' to configure the Dock via dockutil.
+configure_dock: false
+dockitems_remove: []
+# - Launchpad
+# - TV
+# - Podcasts
+# - 'App Store'
+dockitems_persist: []
+# - name: "Sublime Text"
+#   path: "/Applications/Sublime Text.app/"
+#   pos: 5
+
+configure_sudoers: false
 sudoers_custom_config: ''
+# Example:
+# sudoers_custom_config: |
+#   # Allow users in admin group to use sudo with no password.
+#   %admin ALL=(ALL) NOPASSWD: ALL
 
-zsh_fzf_history_search_dir: '~/.oh-my-zsh/custom/plugins/zsh-fzf-history-search/'
-
-# computer_name: geordan-mbp
-# hostname: geordan-mbp.ht.home
-# local_hostname: geordan-mbp.local
-
-dotfiles_repo: git@github.com:geordan/dotfiles.git
+dotfiles_repo: https://github.com/geordan/dotfiles.git
 dotfiles_repo_version: main
-dotfiles_repo_accept_hostkey: yes
+dotfiles_repo_accept_hostkey: true
 dotfiles_repo_local_destination: ~/repos/geordan/dotfiles
 dotfiles_files:
-- .alias
-- bin
-- .config
-- .functions
-- .gitconfig
-- .oh-my-zsh
-- .p10k.zsh
-- .tmux.conf
-- .zshrc
+  - .alias
+  - bin
+  - .config
+  - .functions
+  - .gitconfig
+  - .oh-my-zsh
+  - .p10k.zsh
+  - .tmux.conf
+  - .zshrc
 
-homebrew_upgrade_all_packages: yes
-homebrew_installed_packages: 
-- asdf
-- aws-iam-authenticator
-- awscli
-- bat
-- black
-- bottom
-- docker
-- eksctl
-- exa
-- flake8
-- fzf
-- go
-- gopls
-- helm
-- htop
-- jq
-- kops
-- kubectl
-- lua-language-server
-- mtr
-- neovim
-- node
-- nvm
-- prettier
-- pyright
-- reattach-to-user-namespace
-- ripgrep
-- shellcheck
-- sonobuoy
-- stylua
-- svn
-- task
-- terraform-ls
-- tfenv
-- tflint
-- tmux
-- tree
-- vagrant-completion
-- vim
-- wget
-- yamllint
-- zsh
-
-homebrew_uninstalled_packages:
-- terraform
+homebrew_installed_packages:
+  # - ansible # Installed via Pip.
+  - asdf
+  - awscli
+  - bash-completion
+  - bash-language-server
+  - black
+  - bottom
+  - exa
+  - flake8
+  - fzf
+  - git
+  - github/gh/gh
+  - go
+  - gopls
+  - gpg
+  - kops
+  - kubectl
+  - lua-language-server
+  - mtr
+  - neovim
+  - nmap
+  - node
+  - nvm
+  - openssl
+  - prettier
+  - pyright
+  - readline
+  - reattach-to-user-namespace
+  - ripgrep
+  - shellcheck
+  - ssh-copy-id
+  - stylua
+  - svn
+  - task
+  - terraform-ls
+  - terraform-lsp
+  - tfenv
+  - tflint
+  - tmux
+  - tree
+  - vagrant
+  - vagrant-completion
+  - vim
+  - wget
+  - yaml-language-server
+  - yamllint
+  - youtube-dl
+  - zsh
 
 homebrew_taps:
-- hashicorp/tap
-- homebrew/cask
-- homebrew/cask-drivers
-- homebrew/cask-fonts
-- homebrew/core
-- homebrew/core
-- qmk/qmk
-- romkatv/powerlevel10k
-- weaveworks/tap
+  - hashicorp/tap
+  - homebrew/cask
+  - homebrew/cask-drivers
+  - homebrew/cask-fonts
+  - homebrew/core
+  - qmk/qmk
+  - romkatv/powerlevel10k
+  - weaveworks/tap
 
 homebrew_cask_appdir: /Applications
-
 homebrew_cask_apps:
-- 1password
-- 1password-cli
-- docker
-- firefox
-- font-jetbrains-mono
-- font-jetbrains-mono-nerd-font
-- font-meslo-for-powerline
-- font-meslo-lg
-- font-meslo-lg-nerd-font
-- google-chrome
-- kindle
-- kitty
-- launchbar
-- logitech-camera-settings
-- logitech-options
-- mochi
-- numi
-- omnifocus
-- rectangle
-- slack
-- spotify
-- timeular
-- vagrant
-- virtualbox
-- virtualbox-extension-pack
-
-homebrew_cask_uninstalled_apps:
-- alacritty
-- calibre
-- font-fira-code
-- font-fira-code-nerd-font
-- font-fira-mono
-- font-fira-mono-for-powerline
-- font-fira-mono-nerd-font
-- iterm2
-- qmk-toolbox
-- signal
-- svn 
-- zsa-wally
-
+  - 1password
+  - 1password-cli
+  - docker
+  - firefox
+  - font-meslo-for-powerline
+  - font-meslo-lg
+  - font-meslo-lg-nerd-font
+  - google-chrome
+  - kindle
+  - kitty
+  - launchbar
+  - logi-options-plus
+  - mochi
+  - numi
+  - omnifocus
+  - parallels
+  - qmk-toolbox
+  - rectangle
+  - slack
+  - spotify
+  - sublime-text
+  - vagrant
+  - vagrant-completion
 
 # See `geerlingguy.mas` role documentation for usage instructions.
-mas_installed_apps:
-  - 1480933944
+mas_installed_apps: []
 mas_email: ""
 mas_password: ""
 
@@ -162,35 +148,28 @@ npm_packages: []
 # - name: webpack
 #   state: present # present/absent/latest, default: present
 #   version: "^2.6" # default: N/A
-pip_packages:
-- name: virtualenvwrapper
-  state: latest
-- name: jsontool
-  state: latest
-- name: neovim
-  state: latest
-- name: tasklib
-  state: latest
-# version: N/A
+pip_packages: []
+# - name: mkdocs
+#   state: present # present/absent/latest, default: present
+#   version: "0.16.3" # default: N/A
+
+# Set to 'true' to configure Sublime Text.
+configure_sublime: false
+sublime_base_path: '~/Library/Application Support/Sublime Text'
+sublime_config_path: "Packages/User"
+sublime_package_control:
+  - "DocBlockr"
+  - "Dockerfile Syntax Highlighting"
+  - "FileDiffs"
+  - "GitHub Flavored Markdown Preview"
+  - "Jinja2"
+  - "Package Control"
+  - "PHP-Twig"
+  - "Pretty JSON"
+  - "SublimeLinter"
+  - "SublimeLinter-contrib-yamllint"
+  - "TrailingSpaces"
+  - "WordCount"
 
 # Glob pattern to ansible task files to run after all other tasks are finished.
 post_provision_tasks: []
-
-repos:
-  # - "geordan/mac-dev-playbook"
-  - "McK-Internal/matter-compliance-matter-iac"
-  - "McK-Internal/matter-compliance-matter-workflow"
-  - "McK-Internal/matter-compliance-pipeline-services"
-  - "McK-Internal/matter-compliance-regression-framework"
-  - "McK-Internal/matter-compliance-snitch-cli"
-  - "McK-Internal/matter-compliance-snitch-core"
-  - "McK-Internal/matter-compliance-snitch-rules"
-  - "McK-Internal/matter-compliance-snitch-types"
-  - "McK-Internal/matter-compliance-snitch-utils"
-    # - "McK-Internal/mta-shared"
-  - "McK-Private/matter-compliance-bc-demo-aws"
-  - "brikis98/terraform-up-and-running-code"
-  - "geordan/dotfiles"
-  - "geordan/wiki"
-  - "reactorworks/snitch-docs-website"
-  - "reactorworks/snitch2"
