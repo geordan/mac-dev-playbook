@@ -81,7 +81,6 @@ homebrew_installed_packages:
   - tflint
   - tmux
   - tree
-  - vagrant
   - vagrant-completion
   - vim
   - wget
@@ -124,7 +123,6 @@ homebrew_cask_apps:
   - spotify
   - sublime-text
   - vagrant
-  - vagrant-completion
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
