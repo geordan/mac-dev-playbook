@@ -31,14 +31,15 @@ dotfiles_repo_accept_hostkey: true
 dotfiles_repo_local_destination: ~/repos/geordan/dotfiles
 dotfiles_files:
   - .alias
-  - bin
   - .config
+  - .ctags.d
   - .functions
   - .gitconfig
   - .oh-my-zsh
   - .p10k.zsh
   - .tmux.conf
   - .zshrc
+  - bin
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
@@ -81,6 +82,7 @@ homebrew_installed_packages:
   - tflint
   - tmux
   - tree
+  - universal-ctags
   - vagrant-completion
   - vim
   - wget
@@ -125,7 +127,8 @@ homebrew_cask_apps:
   - vagrant
 
 # See `geerlingguy.mas` role documentation for usage instructions.
-mas_installed_apps: []
+mas_installed_apps: 
+  - 1224268771 # Screens
 mas_email: ""
 mas_password: ""
 

@@ -26,156 +26,158 @@ dotfiles_repo_version: main
 dotfiles_repo_accept_hostkey: yes
 dotfiles_repo_local_destination: ~/repos/geordan/dotfiles
 dotfiles_files:
-- .alias
-- bin
-- .config
-- .functions
-- .gitconfig
-- .oh-my-zsh
-- .p10k.zsh
-- .tmux.conf
-- .zshrc
+  - .alias
+  - .config
+  - .ctags.d
+  - .functions
+  - .gitconfig
+  - .oh-my-zsh
+  - .p10k.zsh
+  - .tmux.conf
+  - .zshrc
+  - bin
 
 homebrew_upgrade_all_packages: yes
 homebrew_installed_packages: 
-- asdf
-- awscli
-- bash-language-server
-- black
-- bottom
-- exa
-- flake8
-- fzf
-- go
-- gopls
-- gopls
-- kops
-- kubectl
-- lua-language-server
-- mtr
-- neovim
-- node
-- prettier
-- pyright
-- reattach-to-user-namespace
-- ripgrep
-- shellcheck
-- stylua
-- svn
-- task
-- terraform-ls
-- terraform-lsp
-- tfenv
-- tflint
-- tmux
-- tree
-- vagrant-completion
-- vim
-- wget
-- yaml-language-server
-- yamllint
-- youtube-dl
-- zsh
+  - asdf
+  - awscli
+  - bash-language-server
+  - black
+  - bottom
+  - exa
+  - flake8
+  - fzf
+  - go
+  - gopls
+  - kops
+  - kubectl
+  - lua-language-server
+  - mtr
+  - neovim
+  - node
+  - prettier
+  - pyright
+  - reattach-to-user-namespace
+  - ripgrep
+  - shellcheck
+  - stylua
+  - svn
+  - task
+  - terraform-ls
+  - terraform-lsp
+  - tfenv
+  - tflint
+  - tmux
+  - tree
+  - universal-ctags
+  - vagrant-completion
+  - vim
+  - wget
+  - yaml-language-server
+  - yamllint
+  - youtube-dl
+  - zsh
 
 homebrew_uninstalled_packages:
-- terraform
+  - terraform
 
 homebrew_taps:
-- hashicorp/tap
-- homebrew/cask
-- homebrew/cask-drivers
-- homebrew/cask-fonts
-- homebrew/core
-- homebrew/core
-- qmk/qmk
-- romkatv/powerlevel10k
-- weaveworks/tap
+  - hashicorp/tap
+  - homebrew/cask
+  - homebrew/cask-drivers
+  - homebrew/cask-fonts
+  - homebrew/core
+  - homebrew/core
+  - qmk/qmk
+  - romkatv/powerlevel10k
+  - weaveworks/tap
 
 homebrew_cask_appdir: /Applications
 
 homebrew_cask_apps:
-- 1password
-- 1password-cli
-- docker
-- firefox
-- font-meslo-for-powerline
-- font-meslo-lg
-- font-meslo-lg-nerd-font
-- google-chrome
-- kindle
-- kitty
-- launchbar
-- logi-options-plus
-- logitech-camera-settings
-- mochi
-- numi
-- omnifocus
-- parallels
-- qmk-toolbox
-- raspberry-pi-imager
-- rectangle
-- signal
-- slack
-- spotify
-- timeular
-- vagrant
-- zoom
-- zsa-wally
+  - 1password
+  - 1password-cli
+  - docker
+  - firefox
+  - font-meslo-for-powerline
+  - font-meslo-lg
+  - font-meslo-lg-nerd-font
+  - google-chrome
+  - kindle
+  - kitty
+  - launchbar
+  - logi-options-plus
+  - logitech-camera-settings
+  - mochi
+  - numi
+  - omnifocus
+  - parallels
+  - qmk-toolbox
+  - raspberry-pi-imager
+  - rectangle
+  - signal
+  - slack
+  - spotify
+  - timeular
+  - vagrant
+  - zoom
+  - zsa-wally
 
 homebrew_cask_uninstalled_apps:
-- alacritty
-- calibre
-- dash
-- font-fira-code
-- font-fira-code-nerd-font
-- font-fira-mono
-- font-fira-mono-for-powerline
-- font-fira-mono-nerd-font
-- font-jetbrains-mono
-- iterm2
-- logitech-options
-- svn 
-- virtualbox
-- virtualbox-extension-pack
+  - alacritty
+  - calibre
+  - dash
+  - font-fira-code
+  - font-fira-code-nerd-font
+  - font-fira-mono
+  - font-fira-mono-for-powerline
+  - font-fira-mono-nerd-font
+  - font-jetbrains-mono
+  - iterm2
+  - logitech-options
+  - svn 
+  - virtualbox
+  - virtualbox-extension-pack
 
 
-# See `geerlingguy.mas` role documentation for usage instructions.
+  # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps:
   - 1480933944
+  - 1224268771 # Screens
 mas_email: ""
 mas_password: ""
 
 osx_script: "~/.osx --no-restart"
 
-# Install packages from other package managers.
-# Note: You are responsible for making sure the required package managers are
-# installed, eg. through homebrew.
+  # Install packages from other package managers.
+  # Note: You are responsible for making sure the required package managers are
+  # installed, eg. through homebrew.
 composer_packages: []
-# - name: drush
-#   state: present # present/absent, default: present
-#   version: "^8.1" # default: N/A
+  # - name: drush
+  #   state: present # present/absent, default: present
+  #   version: "^8.1" # default: N/A
 gem_packages: []
-# - name: bundler
-#   state: present # present/absent/latest, default: present
-#   version: "~> 1.15.1" # default: N/A
+  # - name: bundler
+  #   state: present # present/absent/latest, default: present
+  #   version: "~> 1.15.1" # default: N/A
 npm_packages:
-- name: neovim
-  state: latest
-- name: typescript
-  state: latest
-- name: typescript-language-server
-  state: latest
+  - name: neovim
+    state: latest
+  - name: typescript
+    state: latest
+  - name: typescript-language-server
+    state: latest
 
 pip_packages:
-- name: virtualenvwrapper
-  state: latest
-- name: jsontool
-  state: latest
-- name: neovim
-  state: latest
-- name: tasklib
-  state: latest
-# version: N/A
+  - name: virtualenvwrapper
+    state: latest
+  - name: jsontool
+    state: latest
+  - name: neovim
+    state: latest
+  - name: tasklib
+    state: latest
+    # version: N/A
 
-# Glob pattern to ansible task files to run after all other tasks are finished.
-post_provision_tasks: []
+    # Glob pattern to ansible task files to run after all other tasks are finished.
+  post_provision_tasks: []
