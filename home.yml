@@ -45,6 +45,7 @@ homebrew_installed_packages:
   - black
   - bottom
   - exa
+  - fd
   - flake8
   - fzf
   - go

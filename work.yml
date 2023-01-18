@@ -50,6 +50,7 @@ homebrew_installed_packages:
   - black
   - bottom
   - exa
+  - fd
   - flake8
   - fzf
   - git
@@ -85,6 +86,7 @@ homebrew_installed_packages:
   - universal-ctags
   - vagrant-completion
   - vim
+  - viu
   - wget
   - yaml-language-server
   - yamllint
