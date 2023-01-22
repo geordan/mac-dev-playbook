@@ -68,6 +68,7 @@ homebrew_installed_packages:
   - node
   - nvm
   - openssl
+  - packer
   - prettier
   - pyright
   - readline
@@ -128,6 +129,7 @@ homebrew_cask_apps:
   - spotify
   - sublime-text
   - vagrant
+  - virtualbox
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: 
